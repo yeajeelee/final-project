@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Coffee Gallery • Everyone Should Love Coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
 </head>
 <body>
 
@@ -15,6 +17,9 @@
     </nav>
   </header>
 
+  <button class="mode-toggle" type="button">🌙 Dark Mode</button>
+  <button id="music-btn" type="button">🎵 Set the Café Mood</button>
+
   <main>
 
     <section>
@@ -25,28 +30,81 @@
     <section>
       <h2>Gallery</h2>
 
-      <div class="card">
-        <img src="images/gallery1-placeholder.jpg" alt="Coffee photo placeholder 1">
-        <p class="caption">Caption for photo 1</p>
-      </div>
+      <div class="gallery-grid">
 
-      <div class="card">
-        <img src="images/gallery2-placeholder.jpg" alt="Coffee photo placeholder 2">
-        <p class="caption">Caption for photo 2</p>
-      </div>
+        <div class="flip-card">
+          <div class="flip-wrapper">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="images/blue-latte.jpg" alt="Blue colored latte">
+              </div>
+              <div class="flip-back" style="--bg: url('images/blue-latte.jpg');">
+                <p>This was a latte my mom got when we visited LA. It tasted like Fruity Pebbles but was flavored with curacao.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="card">
-        <img src="images/gallery3-placeholder.jpg" alt="Coffee photo placeholder 3">
-        <p class="caption">Caption for photo 3</p>
-      </div>
+        <div class="flip-card">
+          <div class="flip-wrapper">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="images/palgong-latte.JPG" alt="Latte from Palgong Tea topped with vanilla cream cold foam">
+              </div>
+              <div class="flip-back" style="--bg: url('images/palgong-latte.JPG');">
+                <p>This is one of my favorite lattes from Palgong Tea. It's a caramel latte with vanilla cream cold foam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="card">
-        <img src="images/gallery4-placeholder.jpg" alt="Coffee photo placeholder 4">
-        <p class="caption">Caption for photo 4</p>
-      </div>
+        <div class="flip-card">
+          <div class="flip-wrapper">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="images/la-latte.JPG" alt="Einspanner latte from LA">
+              </div>
+              <div class="flip-back" style="--bg: url('images/la-latte.JPG');">
+                <p>This was another latte from LA. It was the first einspanner latte I tried.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="flip-card">
+          <div class="flip-wrapper">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="images/latte-art.JPG" alt="Latte art">
+              </div>
+              <div class="flip-back" style="--bg: url('images/latte-art.JPG');">
+                <p>Basic latte art from a trip up north with friends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-wrapper">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="images/honeycomb-latte.JPG" alt="Honeycomb latte with honeycomb piece">
+              </div>
+              <div class="flip-back" style="--bg: url('images/honeycomb-latte.JPG');">
+                <p>A honeycomb latte from LA at a café called Gonggan — this one had real honeycomb inside.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </section>
+
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" aria-label="Close image">&times;</span>
+      <img class="lightbox-image" alt="">
+    </div>
 
   </main>
 
@@ -54,5 +112,6 @@
     <p>&copy; 2025 Yeajee Lee</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
