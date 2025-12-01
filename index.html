@@ -3,72 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <title>Everyone Should Love Coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="dist/css/lightbox.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
 </head>
+
 <body>
 
-  <header>
-    <h1>Everyone Should Love Coffee</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about-me.html">About Me</a>
-      <a href="coffee-gallery.html">Gallery</a>
-    </nav>
-  </header>
+<header>
+  <h1 class="typing-title">Everyone Should Love Coffee</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about-me.html">About Me</a>
+    <a href="coffee-gallery.html">Gallery</a>
+  </nav>
+</header>
 
-  <main>
+<button class="mode-toggle" type="button">🌙 Dark Mode</button>
+<button id="music-btn" type="button">🎵 Set the Café Mood</button>
 
-    <section>
-      <h2>About Coffee</h2>
-      <p>According to legend, a goat herder named Kaldi was the first person who discovered coffee beans and their benefits. Kaldi noticed that after his goats ate the cherries of a particular tree in the ancient coffee forests of the Ethiopian plateau, they were so full of energy that they didn’t want to sleep at night.</p>
-      <p>There are many different ways to drink and make coffee. Below are a few popular types and what makes each one unique.</p>
-      <img src="images/about-coffee-placeholder.jpg" alt="Placeholder image representing the history of coffee">
-    </section>
+<main>
 
-    <section>
-      <h2>Espresso</h2>
-      <p>Espresso is an intricate way to brew a highly concentrated coffee by using high pressure and finely ground coffee. This process creates a strong, syrupy shot with a layer of foam called crema on top.</p>
-      <img src="images/espresso-placeholder.jpg" alt="Espresso placeholder image">
-    </section>
+<div class="cards-container">
 
-    <section>
-      <h2>Latte</h2>
-      <p>“Latte” in Italian means milk. A latte is milk and espresso combined together. It is known for its creaminess and a less strong espresso taste.</p>
-      <p><em>Personal favorite!</em></p>
-      <img src="images/latte-placeholder.jpg" alt="Latte placeholder image">
-    </section>
+  <div class="card full-width">
+    <h2>About Coffee</h2>
 
-    <section>
-      <h2>Cold Brew</h2>
-      <p>Cold brew is made by steeping coffee grounds in water for several days in the fridge. This creates a smooth, less acidic concentrate with a stronger taste and higher caffeine content.</p>
-      <p><em>I personally like it with a flavored cold foam on top!</em></p>
-      <img src="images/coldbrew-placeholder.jpg" alt="Cold brew placeholder image">
-    </section>
+    <a href="images/history.jpg" data-lightbox="coffee" data-title="According to legend, a goat herder named Kaldi discovered coffee after noticing his goats became energized from eating coffee cherries.">
+      <img src="images/history.jpg" alt="Coffee beans on an old map">
+    </a>
 
-    <section>
-      <h2>Drip Coffee</h2>
-      <p>Drip coffee is a very standard coffee that is made by pouring hot water onto ground coffee beans, allowing it to brew while seeping through a filter. You typically use a coffee machine, a filter, and water for this method.</p>
-      <img src="images/drip-placeholder.jpg" alt="Drip coffee placeholder image">
-    </section>
+    <p>According to legend, a goat herder named Kaldi was the first person who discovered coffee beans and their benefits. Kaldi noticed that after his goats ate the cherries of a particular tree in the ancient coffee forests of the Ethiopian plateau, they were so full of energy that they didn’t want to sleep at night.</p>
 
-    <section>
-      <h2>Affogato</h2>
-      <p>An affogato is a dessert coffee where hot espresso is poured onto ice cream. The mix of cold ice cream and hot espresso creates a rich and delicious treat.</p>
-      <img src="images/affogato-placeholder.jpg" alt="Affogato placeholder image">
-    </section>
+    <p>There are many different ways to drink and make coffee. Below are a few popular types and what makes each one unique.</p>
+  </div>
 
-    <section>
-      <h2>Shaken Espresso</h2>
-      <p>A shaken espresso is made by vigorously shaking espresso with ice. This chills the espresso quickly, dilutes it just enough to reduce bitterness, and aerates it to create a light, foamy top layer.</p>
-      <p>It can be finished with a splash of milk for a smooth, balanced taste.</p>
-      <p><em>My current go-to with Nespresso pods!</em></p>
-      <img src="images/shakenespresso-placeholder.jpg" alt="Shaken espresso placeholder image">
-    </section>
+  <div class="card">
+    <h2>Espresso</h2>
+    <a href="images/espresso.png" data-lightbox="coffee" data-title="Espresso is a concentrated coffee brewed under high pressure using finely ground coffee.">
+      <img src="images/espresso.png" alt="Espresso">
+    </a>
+    <p>Espresso is an intricate way to brew a highly concentrated coffee by using high pressure and finely ground coffee. This process creates a strong, syrupy shot with a layer of foam called crema on top.</p>
+  </div>
 
-  </main>
+  <div class="card">
+    <h2>Latte</h2>
+    <a href="images/latte.jpg" data-lightbox="coffee" data-title="A latte is espresso mixed with steamed milk — creamy and smooth.">
+      <img src="images/latte.jpg" alt="Latte">
+    </a>
+    <p>“Latte” in Italian means milk. A latte blends espresso with steamed milk for a creamy, balanced drink.</p>
+    <p><em>Personal favorite!</em></p>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Yeajee Lee</p>
-  </footer>
+  <div class="card">
+    <h2>Cold Brew</h2>
+    <a href="images/coldbrew.jpg" data-lightbox="coffee" data-title="Cold brew is slow-steeped for hours, making it smooth and less acidic.">
+      <img src="images/coldbrew.jpg" alt="Cold brew">
+    </a>
+    <p>Cold brew is made by steeping coffee grounds in cold water for many hours, producing a smooth and low-acid concentrate.</p>
+    <p><em>I love it with flavored cold foam!</em></p>
+  </div>
+
+  <div class="card">
+    <h2>Drip Coffee</h2>
+    <a href="images/machine.jpg" data-lightbox="coffee" data-title="Drip coffee is brewed by running hot water over grounds in a filter.">
+      <img src="images/machine.jpg" alt="Drip coffee machine">
+    </a>
+    <p>A classic brew method where hot water runs through grounds in a filter and drips into a pot or mug.</p>
+  </div>
+
+  <div class="card">
+    <h2>Affogato</h2>
+    <a href="images/affogato.jpg" data-lightbox="coffee" data-title="An affogato is espresso poured over ice cream — dessert and coffee together.">
+      <img src="images/affogato.jpg" alt="Affogato">
+    </a>
+    <p>A dessert coffee where hot espresso is poured over ice cream.</p>
+  </div>
+
+  <div class="card">
+    <h2>Shaken Espresso</h2>
+    <a href="images/shaken-espresso.jpg" data-lightbox="coffee" data-title="Shaken espresso is vigorously shaken with ice for a foamy, chilled finish.">
+      <img src="images/shaken-espresso.jpg" alt="Shaken espresso">
+    </a>
+    <p>Made by shaking espresso with ice to quickly chill and aerate it, creating a light and foamy layer.</p>
+    <p><em>My current go-to!</em></p>
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Yeajee Lee</p>
+</footer>
+
+<script src="dist/js/lightbox-plus-jquery.js"></script>
+<script>
+lightbox.option({
+  wrapAround: true,
+  fadeDuration: 300,
+  imageFadeDuration: 300
+});
+</script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
